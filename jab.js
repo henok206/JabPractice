@@ -94,14 +94,19 @@
 // console.log(VowelCounter("Dog"));
 
 //the same resulat we can get like the above function
-function VowelCounter(str) {
-    const vowels = "aeiou";
-    let counter = 0;
-    for (let i = 0; i < str.length; i++) {
-        if (vowels.includes(str[i])) {
-            counter++;
-        }
-    }
-    return counter;
+// function VowelCounter(str) {
+//     const vowels = "aeiou";
+//     let counter = 0;
+//     for (let i = 0; i < str.length; i++) {
+//         if (vowels.includes(str[i])) {
+//             counter++;
+//         }
+//     }
+//     return counter;
+// }
+// console.log(VowelCounter("Henok"));
+//the same as for loop
+let vovels = "aeiou";
+for (let elmt of vovels) {
+    console.log(elmt);
 }
-console.log(VowelCounter("Henok"));
