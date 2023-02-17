@@ -11,3 +11,4 @@ function gradeCalculator(grade) {
         console.log("F");
     }
 }
+gradeCalculator(89);
