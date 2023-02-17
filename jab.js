@@ -79,3 +79,29 @@
 // console.log(arr);
 // let arrSorted = [...arr].sort();
 // console.log(arrSorted);
+
+//count vowels
+// function VowelCounter(str) {
+//     const vowels = "aeiou";
+//     let counter = 0;
+//     for (let i = 0; i < str.length; i++) {
+//         if (vowels.includes(str[i]) === true) {
+//             counter++;
+//         }
+//     }
+//     return counter;
+// }
+// console.log(VowelCounter("Dog"));
+
+//the same resulat we can get like the above function
+function VowelCounter(str) {
+    const vowels = "aeiou";
+    let counter = 0;
+    for (let i = 0; i < str.length; i++) {
+        if (vowels.includes(str[i])) {
+            counter++;
+        }
+    }
+    return counter;
+}
+console.log(VowelCounter("Henok"));
