@@ -1,14 +1,31 @@
+// just display using consol
+// function gradeCalculator(grade) {
+//     if (grade >= 90) {
+//         console.log("A");
+//     } else if (grade >= 80) {
+//         console.log("B");
+//     } else if (grade >= 70) {
+//         console.log("c");
+//     } else if (grade >= 50) {
+//         console.log("D");
+//     } else {
+//         console.log("F");
+//     }
+// }
+// gradeCalculator(89);
+// using return key word
 function gradeCalculator(grade) {
     if (grade >= 90) {
-        console.log("A");
+        return "A";
     } else if (grade >= 80) {
-        console.log("B");
+        return "B";
     } else if (grade >= 70) {
-        console.log("c");
+        return "c";
     } else if (grade >= 50) {
-        console.log("D");
+        return "D";
     } else {
-        console.log("F");
+        return "F";
     }
 }
-gradeCalculator(89);
+result = gradeCalculator(94);
+console.log(result);
