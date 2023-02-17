@@ -1,0 +1,2 @@
+# JabPractice
+JavaScript code practice
