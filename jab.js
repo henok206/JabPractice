@@ -14,18 +14,68 @@
 // }
 // gradeCalculator(89);
 // using return key word
-function gradeCalculator(grade) {
-    if (grade >= 90) {
-        return "A";
-    } else if (grade >= 80) {
-        return "B";
-    } else if (grade >= 70) {
-        return "c";
-    } else if (grade >= 50) {
-        return "D";
-    } else {
-        return "F";
-    }
-}
-result = gradeCalculator(94);
-console.log(result);
+// function gradeCalculator(grade) {
+//     if (grade >= 90) {
+//         return "A";
+//     } else if (grade >= 80) {
+//         return "B";
+//     } else if (grade >= 70) {
+//         return "c";
+//     } else if (grade >= 50) {
+//         return "D";
+//     } else {
+//         return "F";
+//     }
+// }
+// result = gradeCalculator(94);
+// console.log(result);
+
+//about object
+// const pearson = {
+//     Eyes: 2,
+//     legs: 2,
+//     Language: "Amharic",
+//     speake: function () {
+//         return "Selam All";
+//     },
+// };
+
+//Dot Noatation
+// console.log(pearson.Eyes);
+// console.log(pearson.legs);
+// console.log(pearson.Language);
+// console.log(pearson.speake());
+
+// bracket operator
+
+// console.log(pearson["Eyes"]);
+// console.log(pearson["legs"]);
+// console.log(pearson["Language"]);
+//builtin property and Method
+// let Fname = "DawiD";
+// Fname.length;
+// console.log(Fname);
+// console.log(Fname.length);
+// console.log(Fname.indexOf("D"));
+// console.log(Fname.lastIndexOf("D"));
+// console.log(Fname.slice(0, 3));
+// console.log(Fname.toUpperCase());
+// //conver number to string
+// let num = 15;
+// console.log(num.toString());
+// console.log(typeof 15);
+//How to convert string into array
+// console.log(Fname.split(""));
+
+// let arr = [];
+// arr.push("Zelalem");
+// arr.push("Abebe");
+// arr.push("Mekides");
+// arr.push("Lemilem");
+
+// arr.sort();
+// console.log(arr);
+// arr.reverse();
+// console.log(arr);
+// let arrSorted = [...arr].sort();
+// console.log(arrSorted);
