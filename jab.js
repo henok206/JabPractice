@@ -134,3 +134,20 @@
 // for (const value of listOfStudent) {
 //     console.log(value);
 // }
+
+//creating object
+
+// const person = {
+//     name: "Mesfin",
+//     age: 45,
+//     Profesion: "software Architect",
+//     address: {
+//         city: "Addis_Ababa",
+//         sub_city: "Arada",
+//         HousNo: 1234,
+//     },
+// };
+// // accessing the data two way dot notation and bracket
+// console.log(person.name, person.age, person.Profesion, person.address.city);
+// person.MartialStatus = "Married";
+// console.log(person.MartialStatus);
