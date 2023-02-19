@@ -121,5 +121,16 @@
 
 // arrow function
 
-const MultiplayNum = (num1, num2) => num1 * num2;
-console.log(MultiplayNum(12, 12));
+// const MultiplayNum = (num1, num2) => num1 * num2;
+// console.log(MultiplayNum(12, 12));
+
+// using for--of loop how to display index and value
+// const myArr = [1, 2, 3, 4, 5, 6, 7];
+// for (const [index, value] of myArr.entries()) {
+//     console.log(`index:${index},value:${value}`);
+// }
+
+// const listOfStudent = ["Abebe", "kebede", "Moges", "Dawit", "Helen"];
+// for (const value of listOfStudent) {
+//     console.log(value);
+// }
