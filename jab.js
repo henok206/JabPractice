@@ -106,7 +106,20 @@
 // }
 // console.log(VowelCounter("Henok"));
 //the same as for loop
-let vovels = "aeiou";
-for (let elmt of vovels) {
-    console.log(elmt);
-}
+// let vovels = "aeiou";
+// for (let elmt of vovels) {
+//     console.log(elmt);
+// }
+
+//Annonimous Function
+// const addTwoNumber = function (num1, num2) {
+//     return num1 + num2;
+// };
+// console.log(addTwoNumber(45, 55));
+// console.log(addTwoNumber(20, 50));
+// console.log(addTwoNumber(45, 55));
+
+// arrow function
+
+const MultiplayNum = (num1, num2) => num1 * num2;
+console.log(MultiplayNum(12, 12));
