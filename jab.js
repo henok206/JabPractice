@@ -153,3 +153,119 @@
 // console.log(person["age"]);
 // person.MartialStatus = "Married";
 // console.log(person.MartialStatus);
+
+// let fruitS = ["apple", "mango", "Bannana"];
+// let firstFruit = fruitS[0];
+// let lastFruit = fruitS[fruitS.length - 1];
+// fruitS.push("Orange");
+// console.log(firstFruit);
+// console.log(lastFruit);
+// console.log(fruitS.push());
+//console.log(fruitS.pop());
+
+// console.log(fruitS.shift());
+// console.log(fruitS.unshift());
+// console.log(fruitS);
+// let fruitsString = fruitS.join(","); // convert array to string
+// fruitS = fruitsString.split(","); // split string into array format
+// console.log(fruitS); //output
+//console.log(typeof fruitS); //data type string
+// if (Array.isArray(fruitS)) {
+//     console.log("fruitS is an array");
+// } else {
+//     console.log("fruitS is not an array");
+// }
+// Count vowel
+
+// count vowel count
+
+// let countVowel = function (str) {
+//     let count = 0;
+//     for (let i = 0; i < str.length; i++) {
+//         let char = str[i].toLowerCase();
+//         if (
+//             char === "a" ||
+//             char === "e" ||
+//             char === "i" ||
+//             char === "o" ||
+//             char === "u"
+//         ) {
+//             count++;
+//         }
+//     }
+//     return count;
+// };
+// console.log(countVowel("HENOK"));
+
+// other way of count vowelcounter
+
+// function countVow(str) {
+//     const vowels = "aeiou";
+//     let counter = 0;
+//     for (let Values of str) {
+//         if (vowels.includes(Values)) {
+//             counter++;
+//         }
+//     }
+//     return counter;
+// }
+// console.log(countVow("henok")); //
+
+// let oppositeNumber = function (num) {
+//     if (num > 0) {
+//         return num * -1;
+//     } else if (num < 0) {
+//         return num * -1;
+//     } else {
+//         return num;
+//     }
+// };
+// console.log(oppositeNumber(0));
+// other method
+// let oppositeNum = (Number) => {
+//     return -Number;
+// };
+// console.log(oppositeNum(0));
+
+// let CheckNumber = (num) => {
+//     if (num % 2 == 0) {
+//         return num + " The Number is Even";
+//     } else if (num % 2 == !0) {
+//         return num + " The Number is odd";
+//     }
+// };
+// console.log(CheckNumber(9));
+// console.log(CheckNumber(48));
+
+//other way using Ternary operator
+// let CheckNumber = (num) => {
+//     return num % 2 === 0 ? num + " Even" : num + " odd";
+// };
+// console.log(CheckNumber(9));
+// console.log(CheckNumber(4));
+// console.log(CheckNumber(8));
+
+// geting middle character from the given string
+
+// let getMiddleChar = function (str) {
+//     let middleIndex = Math.floor(str.length / 2);
+//     if (str.length % 2 == 0) {
+//         return str.slice(middleIndex - 1, middleIndex + 1);
+//     } else {
+//         return str.charAt(middleIndex);//str[middleIndex]
+//     }
+// };
+// console.log(getMiddleChar("Henok"));
+// console.log(getMiddleChar("Tedy"));
+// console.log(getMiddleChar("Test"));
+// console.log(getMiddleChar("World"));
+// console.log(getMiddleChar("Middle"));
+//using Ternary operator
+let getMiddleChar = function (str) {
+    let middleIndex = Math.floor(str.length / 2);
+    return str.length % 2 == 0
+        ? str.slice(middleIndex - 1, middleIndex + 1)
+        : str[middleIndex];
+};
+console.log(getMiddleChar("Mekides"));
+console.log(getMiddleChar("Dave"));
