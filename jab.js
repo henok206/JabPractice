@@ -261,11 +261,97 @@
 // console.log(getMiddleChar("World"));
 // console.log(getMiddleChar("Middle"));
 //using Ternary operator
-let getMiddleChar = function (str) {
-    let middleIndex = Math.floor(str.length / 2);
-    return str.length % 2 == 0
-        ? str.slice(middleIndex - 1, middleIndex + 1)
-        : str[middleIndex];
-};
-console.log(getMiddleChar("Mekides"));
-console.log(getMiddleChar("Dave"));
+// let getMiddleChar = function (str) {
+//     let middleIndex = Math.floor(str.length / 2);
+//     return str.length % 2 == 0
+//         ? str.slice(middleIndex - 1, middleIndex + 1)
+//         : str[middleIndex];
+// };
+// console.log(getMiddleChar("Mekides"));
+// console.log(getMiddleChar("Dave"));
+//make the first letter of the word capitalize
+// function Capitalizing(word) {
+//     return word[0].toUpperCase() + word.slice(1).toLowerCase();
+// }
+
+// let firstLetterCapitalize = function (str) {
+//     let words = str.split(" "); //convert string into array
+//     let result = [];
+//     for (let word of words) {
+//         result.push(Capitalizing(word));
+//     }
+//     return result.join(" "); //oposite of split ,converting arry into string
+// };
+
+// console.log(firstLetterCapitalize("hello guys how are you doing so far"));
+// function muble(str) {
+//     let result = ""; //to store mubbled string
+//     for (let i = 0; i < str.length; i++) {
+//         result = result + str[i].toUpperCase(); //add the UpperCase char into result string
+//         for (let j = 0; j < i; j++) {
+//             result = result + str[i].toLowerCase();
+//         }
+//         if (i < str.length - 1) {
+//             result = result + "-";
+//         }
+//     }
+//     return result;
+// }
+// console.log(muble("Abcd"));
+
+// othe way to muble fun
+
+// function capi(letter, num) {
+//     let result = "";
+//     for (let i = 0; i < num; i++) {
+//         result += i === 0 ? letter.toUpperCase() : letter.toLowerCase();
+//     }
+//     return result;
+// }
+// function accum(str) {
+//     let result = [];
+//     let counter = 1;
+//     let letters = str.split(""); //to convert sring into array formmat
+//     for (let letter of letters) {
+//         result.push(capi(letter, counter));
+//         counter++;
+//     }
+//     return result.join("-"); //to convert array format into string
+// }
+// console.log(accum("abcd"));
+
+// finding max num
+// function findMax(num) {
+//     let max = num[0];
+//     for (let i = 0; i < num.length; i++) {
+//         if (num[i] > max) {
+//             max = num[i];
+//         }
+//     }
+//     return max;
+// }
+// console.log(findMax([77, -5, 2, 99, 44, 37]));
+
+// function findMin(numbers) {
+//     let min = numbers[0];
+//     for (let i = 0; i < numbers.length; i++) {
+//         if (numbers[i] < min) {
+//             min = numbers[i];
+//         }
+//     }
+//     return min;
+// }
+// console.log(findMin([77, -5, 2, 87, 44, 78]));
+
+function squreDigit(nums) {
+    nums = nums.toString(); //convert input number into string
+    let result = [];
+    console.log(typeof nums);
+    for (let i = 0; i < nums.length; i++) {
+        result.push(Math.pow(nums[i], 2)); //result.push(nums[i]*nums[i])
+    }
+    return result.join(""); //convert str
+}
+console.log(squreDigit(9119));
+console.log(squreDigit(223));
+console.log(squreDigit(666));
