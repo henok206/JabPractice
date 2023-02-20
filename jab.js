@@ -140,6 +140,7 @@
 // const person = {
 //     name: "Mesfin",
 //     age: 45,
+//     hobbies: ["reading", "coding"],
 //     Profesion: "software Architect",
 //     address: {
 //         city: "Addis_Ababa",
@@ -148,6 +149,7 @@
 //     },
 // };
 // // accessing the data two way dot notation and bracket
-// console.log(person.name, person.age, person.Profesion, person.address.city);
+// console.log(person.name, person.Profesion, person.address.city);
+// console.log(person["age"]);
 // person.MartialStatus = "Married";
 // console.log(person.MartialStatus);
