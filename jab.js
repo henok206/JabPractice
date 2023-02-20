@@ -343,15 +343,40 @@
 // }
 // console.log(findMin([77, -5, 2, 87, 44, 78]));
 
-function squreDigit(nums) {
-    nums = nums.toString(); //convert input number into string
-    let result = [];
-    console.log(typeof nums);
-    for (let i = 0; i < nums.length; i++) {
-        result.push(Math.pow(nums[i], 2)); //result.push(nums[i]*nums[i])
+// function squreDigit(nums) {
+//     nums = nums.toString(); //convert input number into string
+//     let result = [];
+//     console.log(typeof nums);
+//     for (let i = 0; i < nums.length; i++) {
+//         result.push(Math.pow(nums[i], 2)); //result.push(nums[i]*nums[i])
+//     }
+//     return result.join(""); //convert str
+// }
+// console.log(squreDigit(9119));
+// console.log(squreDigit(223));
+// console.log(squreDigit(666));
+
+function xxoo(str) {
+    let xCount = 0;
+    let oCount = 0;
+    for (let i = 0; i < str.length; i++) {
+        if (str[i].toLowerCase() === "x") {
+            xCount++;
+        }
+        if (str[i].toLowerCase() === "o") {
+            oCount++;
+        }
     }
-    return result.join(""); //convert str
+    if (xCount === 0 && oCount === 0) {
+        return true;
+    } else if (xCount === oCount) {
+        return true;
+    } else {
+        return false;
+    }
 }
-console.log(squreDigit(9119));
-console.log(squreDigit(223));
-console.log(squreDigit(666));
+console.log(xxoo("ooxx"));
+console.log(xxoo("xooxx"));
+console.log(xxoo("ooxXm"));
+console.log(xxoo("zpzpzpp"));
+console.log(xxoo("zzoo"));
