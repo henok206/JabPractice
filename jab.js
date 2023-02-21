@@ -356,27 +356,56 @@
 // console.log(squreDigit(223));
 // console.log(squreDigit(666));
 
-function xxoo(str) {
-    let xCount = 0;
-    let oCount = 0;
-    for (let i = 0; i < str.length; i++) {
-        if (str[i].toLowerCase() === "x") {
-            xCount++;
-        }
-        if (str[i].toLowerCase() === "o") {
-            oCount++;
-        }
+// function xxoo(str) {
+//     let xCount = 0;
+//     let oCount = 0;
+//     for (let i = 0; i < str.length; i++) {
+//         if (str[i].toLowerCase() === "x") {
+//             xCount++;
+//         }
+//         if (str[i].toLowerCase() === "o") {
+//             oCount++;
+//         }
+//     }
+//     if (xCount === 0 && oCount === 0) {
+//         return true;
+//     } else if (xCount === oCount) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+// console.log(xxoo("ooxx"));
+// console.log(xxoo("xooxx"));
+// console.log(xxoo("ooxXm"));
+// console.log(xxoo("zpzpzpp"));
+// console.log(xxoo("zzoo"));
+
+let likes = function (names) {
+    switch (names.length) {
+        case 0:
+            return "No one likes";
+            break;
+        case 1:
+            return `${names[0]} likes this`;
+            break;
+        case 2:
+            return `${names[0]} and ${names[1]} like this`;
+            break;
+        case 3:
+            return `${names[0]},${names[1]} and ${names[2]} like this`;
+            break;
     }
-    if (xCount === 0 && oCount === 0) {
-        return true;
-    } else if (xCount === oCount) {
-        return true;
-    } else {
-        return false;
+
+    if (names.length > 3) {
+        return `${names[0]},${names[1]} and ${
+            names.length - 2
+        } other like this`;
     }
-}
-console.log(xxoo("ooxx"));
-console.log(xxoo("xooxx"));
-console.log(xxoo("ooxXm"));
-console.log(xxoo("zpzpzpp"));
-console.log(xxoo("zzoo"));
+};
+console.log(likes([]));
+console.log(likes(["Abebe"]));
+console.log(likes(["Abebe", "Henok"]));
+console.log(likes(["Abebe", "Henok", "Meron"]));
+console.log(likes(["Abebe", "Henok", "Meron", "Tekile"]));
+console.log(likes(["Abebe", "Henok", "Meron", "Haile", "Bedilu"]));
