@@ -1,0 +1,14 @@
+body {
+    font-size: 3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    text-align: center;
+}
+.todo {
+    list-style-type: none;
+}
+.todo__item {
+    border: 1px solid #ddd;
+    padding: 1rem;
+}
