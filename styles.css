@@ -2,3 +2,14 @@ body {
     background-color: blueviolet;
     color: white;
 }
+.On {
+    background-color: chartreuse;
+    font-size: larger;
+    font-family: Arial;
+}
+
+.blue-giant {
+    color: blue;
+    font-size: 34;
+    font-family: sans-serif;
+}

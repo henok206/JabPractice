@@ -410,12 +410,25 @@
 // console.log(likes(["Abebe", "Henok", "Meron", "Tekile"]));
 // console.log(likes(["Abebe", "Henok", "Meron", "Haile", "Bedilu"]));
 //DOm practice
-let h1El = document.querySelector("h1");
-h1El.style.color = "Black";
-let content = document.createElement("P1");
-content.innerHTML = "This is the message i wrote in p1 Tag!";
-document.querySelector("body").appendChild(content);
+// let h1El = document.querySelector("h1");
+// let content = document.createElement("P1");
+// let h2Elm = document.querySelector("h2");
+// let bodyElm = document.querySelector("body");
+// let switchEl = document.querySelector("button");
+// let h3Elm = document.getElementById("ct");
+// content.innerHTML = "This is the message i wrote in p1 Tag!";
+// document.querySelector("body").appendChild(content);
+// h1El.style.color = "Black";
+// console.log(document.querySelector(".chore"));
+// let rand_parElm = document.querySelectorAll(".chore,.rondom_paragraph");
+// console.log(rand_parElm);
+// h2Elm.classList.add("blue-giant");
+// //h2Elm.classList.remove("blue-giant");
 
-console.log(document.querySelector(".chore"));
-let rand_parElm = document.querySelectorAll(".chore,.rondom_paragraph");
-console.log(rand_parElm);
+// switchEl.onclick = function () {
+//     bodyElm.classList.toggle("On");
+// };
+// h3Elm.setAttribute("class", "some thing new"); //3 class
+// h3Elm.removeAttribute("class");
+// h3Elm.removeAttribute("id");
+// h3Elm.setAttribute("id", "newId");
