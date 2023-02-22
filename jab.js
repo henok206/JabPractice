@@ -381,31 +381,41 @@
 // console.log(xxoo("zpzpzpp"));
 // console.log(xxoo("zzoo"));
 
-let likes = function (names) {
-    switch (names.length) {
-        case 0:
-            return "No one likes";
-            break;
-        case 1:
-            return `${names[0]} likes this`;
-            break;
-        case 2:
-            return `${names[0]} and ${names[1]} like this`;
-            break;
-        case 3:
-            return `${names[0]},${names[1]} and ${names[2]} like this`;
-            break;
-    }
+// let likes = function (names) {
+//     switch (names.length) {
+//         case 0:
+//             return "No one likes";
+//             break;
+//         case 1:
+//             return `${names[0]} likes this`;
+//             break;
+//         case 2:
+//             return `${names[0]} and ${names[1]} like this`;
+//             break;
+//         case 3:
+//             return `${names[0]},${names[1]} and ${names[2]} like this`;
+//             break;
+//     }
 
-    if (names.length > 3) {
-        return `${names[0]},${names[1]} and ${
-            names.length - 2
-        } other like this`;
-    }
-};
-console.log(likes([]));
-console.log(likes(["Abebe"]));
-console.log(likes(["Abebe", "Henok"]));
-console.log(likes(["Abebe", "Henok", "Meron"]));
-console.log(likes(["Abebe", "Henok", "Meron", "Tekile"]));
-console.log(likes(["Abebe", "Henok", "Meron", "Haile", "Bedilu"]));
+//     if (names.length > 3) {
+//         return `${names[0]},${names[1]} and ${
+//             names.length - 2
+//         } other like this`;
+//     }
+// };
+// console.log(likes([]));
+// console.log(likes(["Abebe"]));
+// console.log(likes(["Abebe", "Henok"]));
+// console.log(likes(["Abebe", "Henok", "Meron"]));
+// console.log(likes(["Abebe", "Henok", "Meron", "Tekile"]));
+// console.log(likes(["Abebe", "Henok", "Meron", "Haile", "Bedilu"]));
+//DOm practice
+let h1El = document.querySelector("h1");
+h1El.style.color = "Black";
+let content = document.createElement("P1");
+content.innerHTML = "This is the message i wrote in p1 Tag!";
+document.querySelector("body").appendChild(content);
+
+console.log(document.querySelector(".chore"));
+let rand_parElm = document.querySelectorAll(".chore,.rondom_paragraph");
+console.log(rand_parElm);
