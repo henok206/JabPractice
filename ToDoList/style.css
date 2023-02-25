@@ -42,9 +42,7 @@ body {
     border-bottom: 2px solid #d49a3f;
     transition: 0.3s all ease;
 }
-.close__item {
-    margin-left: 680px;
-}
+
 .todo__item:hover {
     cursor: default;
 }
