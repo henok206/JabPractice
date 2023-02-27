@@ -13,7 +13,7 @@ function getTimeDifference(start, end) {
     hours = hours - days * 24;
     minutes = minutes - days * 24 * 60 - hours * 60;
     seconds = seconds - days * 24 * 60 * 60 - hours * 60 * 60 - minutes * 60;
-    //return days + " " + hours + " " + minutes + " " + seconds;
+    //     //return days + " " + hours + " " + minutes + " " + seconds;
     return {
         rDay: days,
         rHours: hours,
@@ -22,7 +22,7 @@ function getTimeDifference(start, end) {
     };
 }
 
-//console.log(getTimeDifference(startDate, endDate));
+// //console.log(getTimeDifference(startDate, endDate));
 
 let Timer = setInterval(function () {
     const startDate = new Date();
