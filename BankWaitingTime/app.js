@@ -5,12 +5,13 @@ function displayCountdown(count) {
     const countElm = document.getElementById("countdown");
     countElm.style.fontSize = "5rem";
     countElm.style.color = "blue";
-    countElm.innerHTML = `Your number is ${customerNumber},  Please wait for ${count} seconds`;
+    countElm.style.fontFamily = "Arial"; //"sans-serif";
+    countElm.innerHTML = `Your Number Is ${customerNumber},  Please Wait For ${count} Seconds`;
 
     let id = setTimeout(function () {
         if (count == 0) {
             clearTimeout(id);
-            countElm.innerHTML = `Your number is ${customerNumber},  please proceed to the counter.`;
+            countElm.innerHTML = `Your Number Is ${customerNumber},  Please Proceed To The Counter.`;
         } else {
             displayCountdown(count - 1);
         }
